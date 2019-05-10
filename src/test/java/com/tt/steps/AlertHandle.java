@@ -36,7 +36,7 @@ public class AlertHandle {
 	
 	@Then("^I see new windows gone$")
 	public void i_see_new_windows_gone() throws Throwable {
-	 driver.close();
+	 //this is change
 	}
 
 }

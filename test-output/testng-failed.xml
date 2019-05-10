@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.tt.steps.NumberOfLinks">
+      <class name="com.tt.steps.BrokenLinks">
         <methods>
-          <include name="Total_Links"/>
+          <include name="verifyLinkActive"/>
         </methods>
-      </class> <!-- com.tt.steps.NumberOfLinks -->
+      </class> <!-- com.tt.steps.BrokenLinks -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

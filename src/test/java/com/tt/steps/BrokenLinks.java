@@ -12,22 +12,21 @@ import org.testng.annotations.Test;
 
 public class BrokenLinks {
 	
-	@Test
 	public static void main(String[]args) {
 		
+		System.setProperty("webdriver.chrome.driver", "/home/mahbub/WebDrivers/chromedriver_linux64/chromedriver");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get("http://www.google.co.in");
+		driver.get("http://www.google.com");
 		List<WebElement>links = driver.findElements(By.tagName("a"));
 		System.out.println("Total links are"+links.size());
 		for (int i = 0; i <links.size(); i++) {
 			WebElement ele = links.get(i);
 			String url = ele.getAttribute("href");
 			verifyLinkActive(url);
-			
-		}
+		}		
 	}
-
+	
 	public static void verifyLinkActive(String linkUrl) {
 		try {
 			URL url = new URL(linkUrl);
