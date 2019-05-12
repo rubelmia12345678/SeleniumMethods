@@ -48,13 +48,13 @@ public class ContactService {
 		driver.findElement(By.name("FirstName")).sendKeys("Name");
 		driver.findElement(By.name("LastName")).sendKeys("l_Name");
 		driver.findElement(By.name("Email")).sendKeys("a1b1c1@gmail.com");
+		driver.quit();
 	  
 	}
 
-	@Then("^I see complain submitted successfully$")
+	/*@Then("^I see complain submitted successfully$")
 	public void i_see_complain_submitted_successfully() throws Throwable {
 		driver.findElement(By.xpath("//*[@id=\"form-your-info\"]/div[2]/div[6]/a")).click();
-	    driver.close();
+	    driver.close();*/
 	}
 
-}
